@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="form_valid.js"></script>
+
+  <title>Online CV Builder - Home</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel="icon" href="images/favicon.ico" />
+  
+			
+<script>
+  $( function() {
+    $( "#dob" ).datepicker();
+    $( "#anim" ).on( "change", function() {
+      $( "#dob" ).datepicker( "bounce", "showAnim", $( this ).val() );
+    });
+  } );
+  </script>
+  
+  
+ 
+    </head>
+
+
+    <body class="container-fluid"  style="background-color:#1B98C4">
+
+    <!--
+        <div class="jumbotron" style="background-image:url('https://www.bing.com/az/hprichbg/rb/Aoraki_ROW8754222343_1920x1080.jpg')"  >
+          <h3><image src="glyphicons_free/glyphicons/png/glyphicons-88-log-book.png" width='30' height='30' ></image>&nbsp Userbook</h3> 
+
+        <form id="form1"  class="form-inline " style="text-align:right;" onsubmit="return checkform1()" action="account.php" method="post">
+            <fieldset>
+                <legend> Please Login To Continue </br> Or SignUp for Free </legend>
+            <div class="form-group" id="f1u">
+                <label for=""><span class="glyphicon glyphicon-user"></span> Username : </label>
+            <input type="text" class="form-control" id="user" name="Username" placeholder="Username"/></br></br><span id="sp1"></span>
+            </div>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="form-group">
+                <label for=""><span class="glyphicon glyphicon-lock"></span> Password : </label>
+            <input type="password" class="form-control" id="pwd" name="Password" placeholder="Password" /></br></br><span id="sp2"></span>
+            </div>
+			</br>
+			</br>
+            <button type="submit" class="btn btn-info" id="login" name="login" value="LogIn"/><span class="glyphicon glyphicon-log-in"></br></span> LogIn </button>
+            <button type="button" class="btn btn-success" id="signup" value="SignUp"><span class="glyphicon glyphicon-hand-right"></br></span> SignUp</button>
+            </fieldset>
+        </form>
+        </div>
+  -->
+
+
+<div id="container">
+
+    <header>
+  <div class="width">
+        <h1><a href="Actual_CV.html">CV Maker</a></h1>
+
+        <nav>
+  
+          <ul>
+          <li class="selected"><a href="Actual_CV.html">Home</a></li>
+            <li><a href="services.html">Services</a>
+           
+            </li>
+       <li><a href="about.html">About Us</a></li>
+              
+        
+            <li><a href="contact.html">Contact</a></li>
+            
+       <li> <a href="loginform.php" class="button"/>login/Signup</a></li>   
+        </ul>
+  
+          </nav>
+        </div>
+
+  <div class="clear"></div>
+
+    <div id="slides-container" class="slides-container width">
+        <div id="slides">
+            <div>
+                <br><br>
+              <h2> Create beautiful, professional resumes in minutes, free.</h2>
+              <h3>Easily create Beautiful and Awesome CV and Impress Everyone!</h3>
+          </div>
+    </div>
+          
+       
+    </div>
+    </header>
+  <div id="body" class="width">
+  <center><h2>The Online Resume Builder So Easy to Use</h2></center>
+
+ <table > <center>       
+<td><img src="images/m1.png"></br><b><strong>&nbsp&nbsp&nbsp&nbspCreate your resume</strong></b></td></br></br>
+<td><img src="images/m2.png"></br><b><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDownload your resume</strong></b></td></br></br>
+   </center>
+
+        <form id="form2" class="form-group " style="background-image:url('http://content.planit.com/cv/Texture_Gallery/Corian/imagepages/image16.html')" onsubmit="return checkform2()" action="registration.php" method="post" enctype="multipart/form-data">
+   <img src="https://www.talentlms.com/blog/wp-content/uploads/2015/03/the-engaged-employee.png" align="left" width="450" height="750" style="padding-top:30px" />
+    <div style="padding-left:500px; padding-top:25px">
+           <legend>Create Your Curriculum Vitae Here</legend></br>
+
+           <h2>Personal Information</h2>
+
+            <div class="form-group" >
+                <label for="name">&nbsp</label></br>
+                <label for="user"><span class="glyphicon glyphicon-user"></span>&nbspName</label></br>   
+				
+                <input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name" />
+                 <input type="text" class="form-control" id="mname" name="middlename" placeholder="Middle Name" />
+            <input type="text" id="lname" class="form-control" name="lastname" placeholder="Last Name" /><span id="sp4"></span><br/>
+               
+           <label for="dob"><span class="glyphicon glyphicon-calendar"></span>&nbspDate Of Birth </label></br>
+            <input type="text" class="form-control" name="dob" id="dob" /></br>  
+			
+			
+<!--
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value="">None</option>
+  </select>
+</p>
+ -->
+			
+			
+    <label for="gender">Gender&nbsp&nbsp&nbsp</label></br>
+    <input type="radio"  value="Male" name="gender"><image src="glyphicons_free/glyphicons/png/glyphicons-4-user.png" width='15' height='15' ></image>&nbspMale&nbsp&nbsp&nbsp
+    <input type="radio" value="Female" name="gender"><image src="glyphicons_free/glyphicons/png/glyphicons-5-girl.png" width='15' height='15'></image>&nbspFemale<br/></br>
+    <label for="country">Country</label></br>
+    <select name="country" class="form-control">
+    <option selected="selected">India</option>
+				
+				<!--Add More Countries Here !-->
+				
+                <option >England</option>
+                <option >New Zealand</option>
+				<option >Australia</option>
+				<option >United Kingdom</option>
+				<option >USA</option>
+                <option >China</option>
+                <option >South Africa</option>
+                <option >West Indies</option>
+                <option >Pakistan</option>
+                <option >Sri Lanka</option>
+                <option >Bangladesh</option>
+				
+            </select>
+            </br>
+			
+            <label for="file"><image src="glyphicons_free/glyphicons/png/glyphicons-139-picture.png" width='12' height='12' ></image>&nbsp Upload Profile Picture </label></br>
+            <input type="file" class="form-control" id="pp" name="image" placeholder="upload"/></br>
+
+            <label for="file"><image src="glyphicons_free/glyphicons/png/glyphicons-139-picture.png" width='12' height='12' ></image>&nbsp Upload Document </label></br>
+            <input type="file" class="form-control" id="pp" name="image2" placeholder="upload"/></br>
+			
+            <label for=""><span class="glyphicon glyphicon-envelope"></span> &nbsp Email-Id </label></br>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email-Id" required/></br>
+
+            <label for="file"><image src="glyphicons_free/glyphicons-social/png/glyphicons-social-18-linked-in.png" width='12' height='12'></image>&nbsp LinkedIn </label></br>
+            <input type="text" class="form-control" id="LinkedIn" name="LinkedIn" placeholder="LinkedIn" required/></br>
+
+            <label for="file"><image src="glyphicons_free/glyphicons-social/png/glyphicons-social-39-skype.png" width='12' height='12'></image>&nbsp Skype </label></br>
+            <input type="text" class="form-control" id="Skype" name="Skype" placeholder="Skype" required/></br>
+
+            <label for=""><span class="glyphicon glyphicon-phone-alt"></span> &nbsp Contact Number </label></br>
+             <input type="text" class="form-control" maxlength="10" id="mob" name="mob_no"  pattern="[0-9]{10}" placeholder="Enter your mobile number" required/></br>
+
+             <label for=""><span class="glyphicon glyphicon-phone-alt"></span> &nbsp Alternate Contact Number </label></br>
+             <input type="text" class="form-control" maxlength="10" id="mob" name="mob_no2"  pattern="[0-9]{10}" placeholder="Enter your mobile number" required/></br>
+            
+            <label for=""><image src="glyphicons_free/glyphicons/png/glyphicons-27-road.png" width='15' height='15' ></image>&nbsp Address</label>
+             <textarea  id="address" class="form-control" name="add" placeholder="Enter Your Address" required></textarea><br/>
+			 
+             <!-- <label for="">Height</label>
+             <input id="ex1" data-slider-id='ex1Slider' type="range" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+			 -->
+             <label for=""><image src="glyphicons_free/glyphicons/png/glyphicons-139-picture.png" width='12' height='12' ></image>&nbsp Favourite Colour:</label>  </div>
+              <label for="Color">Click on this</label></br>
+             &nbsp&nbsp<input type="color" name="favColor" value="#6666FF"></br>
+
+             <hr>
+             <h2>Educational Qualifications</h2>
+             </br>
+             <label for="SSC">10th Standard</label></br>
+
+                <input type="radio"  value="CBSE" name="board1">&nbspCBSE&nbsp&nbsp&nbsp
+                <input type="radio" value="ICSE" name="board1">&nbspICSE&nbsp&nbsp&nbsp
+                <input type="radio" value="SB" name="board1">&nbspState Board<br/></br>
+                <input type="text" class="form-control" maxlength="5" id="mob" name="marks10"  pattern="[0-9.0-9]{5}" placeholder="Enter Your % in 10th Std" required/></br>
+
+
+
+             <label for="HSSC">12th Standard</label></br>
+
+                <input type="radio"  value="CBSE" name="board2">&nbspCBSE&nbsp&nbsp&nbsp
+                <input type="radio" value="ICSE" name="board2">&nbspICSE&nbsp&nbsp&nbsp
+                <input type="radio" value="SB" name="board2">&nbspState Board<br/></br>
+                <input type="text" class="form-control" maxlength="5" id="mob" name="marks12"  pattern="[0-9.0-9]{5}" placeholder="Enter Your % in 12th Std" required/></br>
+
+
+             <label for="Undergraduate">Undergraduate</label></br>
+
+             <select name="stream" class="form-control">
+                <option selected="selected">Select</option>
+        
+        <!--Add More Streams Here !-->
+        
+                <option >Computer Science and Engineering</option>
+                <option >Electrical Engineering</option>
+                <option >Electronics and Communication Engineering</option>
+                <option >Mechanical Engineering</option>
+                <option >Mining Engineering</option>
+				<option >Petroleum Engineering</option>
+                <option >Mathematics and Computational Engineering</option>
+               
+            </select>
+      
+             <input type="text" class="form-control" maxlength="5" id="mob" name="UGPA"  pattern="[0-9.0-9]{5}" placeholder="Enter Your overall GPA" required/></br>
+
+             <label for="Postgraduate">Postgraduate</label></br>
+             <input type="text" class="form-control" maxlength="5" id="mob" name="PGPA"  pattern="[0-9.0-9]{5}" placeholder="Enter Your overall GPA" required/></br>
+
+             <hr>
+             <h2>Achievements and Awards </h2>
+             <label for="SSC">If any</label></br>
+             <textarea  id="address" class="form-control" name="ac" placeholder="Enter Your details" required></textarea><br/>
+             <hr>
+             <h2>Interests and Hobbies </h2>
+             <label for="SSC">If any</label></br>
+             <textarea  id="address" class="form-control" name="in" placeholder="Enter Your details" required></textarea><br/>
+             <hr>
+             <h2>References </h2>
+             <label for="SSC">If any</label></br>
+             <input type="text" class="form-control" id="Skype" name="re" placeholder="Enter Your details" required/></br>
+             <hr>
+             <h2>Any other Details</h2>
+             <label for="SSC">If any</label></br>
+             <input type="text" class="form-control" id="Skype" name="ao" placeholder="Enter Your details" required/></br>
+			 <hr>
+            
+            <input type="submit" class="btn btn-primary" id="submit" value="Submit"/><br/></br>
+            <input type="submit" class="btn btn-secondary" name="submit" value="Save as PDF" onClick="window.print()"> <br/></br>
+            </div>
+            
+        </form>
+
+        <footer class="footer" style="text-align:right;"> Copyright &copy;<a href="https://www.facebook.com/arnab.saha">&nbspArnab Saha , Aditya Narayen Pandey</a></footer></br>
+    <!--div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;'>
+	<a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website_userbook&utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"  alt="www.000webhost.com"></a>
+	</div-->
+	</body>
+</html>
